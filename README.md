@@ -29,6 +29,10 @@ apresentado anteriormente.
 Dado um determinado usuário, deverá ser possível navegar diretamente até a página de
 detalhe do usuário sem que seja necessário efetuar uma nova busca. Ex: http://localhost:3000/USER_GITHUB
 
+- Gostariamos de pesquisar por usuario.
+- Gostariamos de ao clicar no botão de repos, listar repositorios do usuario pesquisado.
+- Gostariamos de ao clicar no botão de starred, listar os repositorios mais visitados por aquele usuario.
+
 Você poderá usar o framework css Bootstrap ou Materialize para construção dos componentes UI (Se preferir, os componentes poderão ser criados do zero, utilizando as boas práticas).
 
 Você poderá usar os frameworks js para desenvolvimento da sua aplicação ou utilizar o Vanilajs e jQuery.
