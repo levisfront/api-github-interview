@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <title>Github User Information</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <title class="navbar-brand">Github User Information</title>
+            </nav>
+        </header>
+        <main>
+            <div class="card noBorder">
+                <div class="card-body">
+                    <div id="error-validation-message"></div>
+                    <div id="search-content" class="input-group mb-3">
+                        <input id="txt-username" type="text" class="form-control" placeholder="Github username"
+                            aria-label="Github username" aria-describedby="#search-content">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="button-search">Buscar</button>
+                        </div>
+                    </div>
+                    <div id="user-content" class="table-responsive" style="display:none">
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">User</th>
+                                    <th scope="col">Bio</th>
+                                    <th scope="col">Following</th>
+                                    <th scope="col">Followers</th>
+                                    <th scope="col">User Since</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="content-result-user">
+                                <tr>
+                                    <td id="username" scope="row"></td>
+                                    <td id="bio" scope="row"></td>
+                                    <td id="following" scope="row"></td>
+                                    <td id="followers" scope="row"></td>
+                                    <td id="usersince" scope="row">
+                                    <td id="actions" scope="row">
+                                        <button type="button" id="button-repos" class="btn btn-dark">Repos</button>
+                                        <button type="button" id="button-starred" class="btn btn-success">Starred</button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="repos-content" class="table-responsive" style="display:none">
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Owner</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Private</th>
+                                </tr>
+                            </thead>
+                            <tbody id="content-result-repos"></tbody>
+                        </table>
+                    </div>
+                    <div id="starred-content" class="table-responsive" style="display:none">
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Owner</th>
+                                    <th scope="col">Repository</th>
+                                </tr>
+                            </thead>
+                            <tbody id="content-result-starred"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="js/githubUserInformation.js"></script>
+    </body>
+</html>
